@@ -2,15 +2,16 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>Mini Discord Chat</title>
+  <title>シンプルチャット</title>
   <style>
     body { font-family: sans-serif; background: #1e1e2f; color: white; }
     #chat { width: 80%; max-width: 600px; margin: 50px auto; }
-    ul { list-style: none; padding: 0; }
+    ul { list-style: none; padding: 0; max-height: 400px; overflow-y: auto; }
     li { padding: 6px; margin: 3px 0; background: #2b2b3c; border-radius: 5px; }
-    input { width: 80%; padding: 8px; border: none; border-radius: 4px; }
-    button { padding: 8px 10px; border: none; background: #5865f2; color: white; border-radius: 4px; }
-    #name { width: 150px; margin-bottom: 5px; }
+    input, button { padding: 8px; border: none; border-radius: 4px; margin: 2px 0; }
+    #name { width: 120px; }
+    #msg { width: 60%; }
+    button { background: #5865f2; color: white; cursor: pointer; }
   </style>
 </head>
 <body>
